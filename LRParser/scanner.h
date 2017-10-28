@@ -129,8 +129,7 @@ void PrintTokenState(struct tokenType t) {
 		printf("\tToken -----> %9s  (%9d, %9d)\n", tokenName[t.number], t.number, 0);
 	}
 	else if (t.number == 29) {//EOF
-		printf("\tToken -----> %9s  (%9d, %9d, %9s, %9d)\n", tokenName[t.number], t.number, 0);
-		exit(0);
+		printf("\tToken -----> %9s  (%9d, %9d)\n", tokenName[t.number], t.number, 0);
 	}
 }
 struct tokenType scanner()
@@ -285,6 +284,6 @@ struct tokenType scanner()
 		}
 	} while (token.number == tnull);
 
-	PrintTokenState(token);
+	//PrintTokenState(token);
 	return token;
 }

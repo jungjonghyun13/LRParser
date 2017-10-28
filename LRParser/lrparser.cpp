@@ -101,7 +101,7 @@ void parser()
 		else if (entry < 0) {
 			ruleNumber = -entry;
 			if (ruleNumber == GOAL_RULE) {
-				if (errcnt == 0)printf(" *** valid source ***\n");
+				if (errcnt == 0)printf(" *** valid source ***\n\n");
 				else printf(" *** error in source : %d\n", errcnt);
 				return;
 			}
@@ -128,9 +128,9 @@ int main(int argc, char *argv[]) {
 	if (argc < 2)
 	{
 		printf("\n Endter filename : ");
-		//scanf("%s", filename);
-		strcpy(filename ,"perfect.mc");
-		printf("perfect.mc\n");
+		scanf("%s", filename);
+		//strcpy(filename ,"perfect.mc");
+		//printf("perfect.mc\n");
 	}
 	else if (argc == 2)
 	{
@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
 		printf("File open error!\n");
 		exit(2);
 	}
-	printf(" > Scanner started ...\n\n ");
+	printf(" > Scanner started ...\n\n");
 
 	parser();
 	//if (token.number == t$) {
