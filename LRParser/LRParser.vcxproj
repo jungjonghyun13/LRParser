@@ -147,6 +147,10 @@
   <ItemGroup>
     <None Include="miniC.gr" />
     <None Include="miniC.tbl" />
+    <None Include="perfect.mc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scanner.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

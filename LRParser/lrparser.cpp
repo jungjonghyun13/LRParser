@@ -1,24 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "miniC.tbl"
+#include "scanner.h"
 #define PS_SIZE 200
+FILE *fp;
+char filename[100];
 
-void semantic(int);
-void printToken(struct tokenType token);
-void dumpStack();
-void errorRecovery();
+void semantic(int) {}
+void printToken(struct tokenType token) {}
+void dumpStack() {}
+void errorRecovery() {}
 
 int errcnt = 0;
 int sp;
 int stateStack[PS_SIZE];
 int symbolStack[PS_SIZE];
-struct tokenType{//Scanner 추가하면서 검토할 부분
-	int number;
-};
-tokenType scanner() {//Scanner 추가하면서 검토할 부분
-	tokenType A;
-	return A;
-}
+
 void parser()
 {
 	extern int parsingTable[NO_STATES][NO_SYMBOLS + 1];
@@ -68,3 +65,33 @@ void parser()
 		}
 	}/* while(true) */
 }/* parser */
+int main(int argc, char *argv[]) {
+	if (argc < 2)
+	{
+		printf("\n Endter filename : ");
+		scanf("%s", filename);
+	}
+	else if (argc == 2)
+	{
+		strcpy(filename, argv[1]);
+	}
+	else {
+		printf("Arguement error!");
+		exit(1);
+	}
+	if ((fp = fopen(filename, "r")) == NULL)
+	{
+		printf("File open error!\n");
+		exit(2);
+	}
+	printf("Scanner Ready ...\n\n   Left Parse is \n");
+
+	parser();
+	if (token.number == t$) {
+		printf("\n\n\t\tAccepted\n\n");
+	}
+	else {
+		printf("\n\n\t\t Not Accepted\n\n");
+	}
+
+}

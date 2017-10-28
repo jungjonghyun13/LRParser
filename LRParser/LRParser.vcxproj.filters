@@ -26,5 +26,13 @@
     <None Include="miniC.tbl">
       <Filter>헤더 파일</Filter>
     </None>
+    <None Include="perfect.mc">
+      <Filter>헤더 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="scanner.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
