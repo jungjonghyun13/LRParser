@@ -15,27 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="lrparser.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="miniC.gr">
-      <Filter>헤더 파일</Filter>
-    </None>
-    <None Include="miniC.tbl">
-      <Filter>헤더 파일</Filter>
-    </None>
-    <None Include="perfect.mc">
-      <Filter>헤더 파일</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="scanner.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="parser.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

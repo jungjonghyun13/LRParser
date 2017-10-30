@@ -47,24 +47,20 @@ char *tokenName[] = {
 	"==",       ">",       ">=",      "[",      "]",        "eof",
 	/* 24         25         26        27         28         29        */
 	//   ...........    word symbols ................................. //
-	/* 30         31         32        33         34         35        */
-	"const",    "else",     "if",      "int",     "return",  "void",
-	/* 36         37         38        39                              */
+	/* 30         31         32        33        */ 
+	"const",    "else",     "if",      "int",     
+	/*34         35        */
+	"return",  "void",
+	/* 36         37         38        39   */
 	"while",    "{",        "||",       "}"
-	///* 40		  41		 42		   43         44		 45			46			47			48  */
-	//"char",		"double",	"for",		"do",	  "goto",	 "switch",	"case",		"break",	"default",
-	///*49		  50		 51				52					53			*/
-	//":",		"&",		"%char",	"%string",		"%real_num"
 };
 
 char *keyword[NO_KEYWORD] = {
 	"const",  "else",    "if",    "int",    "return",  "void",    "while"
-	//"char",		"double",	"for",		"do",	  "goto",	 "switch",	"case",		"break",	"default"
 };
 
 enum tsymbol tnum[NO_KEYWORD] = {
 	tconst,    telse,     tif,     tint,     treturn,   tvoid,     twhile
-	//tchar, tdouble, tfor, tdo, tgoto, tswitch, tcase, tbreak, tdefault
 };
 
 

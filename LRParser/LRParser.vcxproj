@@ -142,12 +142,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="lrparser.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="miniC.gr" />
-    <None Include="miniC.tbl" />
-    <None Include="perfect.mc" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="parser.h" />

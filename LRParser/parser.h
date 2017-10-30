@@ -3,7 +3,7 @@
 #include "miniC.tbl"
 #include "scanner.h"
 #define PS_SIZE 200
-FILE *sourceFile;
+extern FILE *sourceFile;
 char filename[100];
 
 int errcnt = 0;
